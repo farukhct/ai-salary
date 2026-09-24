@@ -1,0 +1,6 @@
+{
+  "name": "Smart Pay Scale 2026 - বেতন ও বেতন নির্ধারণী ক্যালকুলেটর",
+  "description": "চাকরি (বেতন ও ভাতাদি) আদেশ, ২০২৬ এবং বাংলাদেশ গেজেট অনুসারে পূর্ণাঙ্গ বেতন নির্ধারণ, এরিয়ার, পেনশন, আনুতোষিক ও জিপিএফ ক্যালকুলেটর ও ডাটাবেজ সিস্টেম।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

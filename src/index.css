@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Nikosh';
+  src: url('/fonts/Nikosh.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'NikoshBAN';
+  src: url('/fonts/NikoshBAN.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  body {
+    font-family: 'Nikosh', 'NikoshBAN', 'Hind Siliguri', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  .font-bangla {
+    font-family: 'Nikosh', 'NikoshBAN', 'Hind Siliguri', 'Plus Jakarta Sans', sans-serif;
+  }
+
+  .font-nikosh {
+    font-family: 'Nikosh', 'NikoshBAN', sans-serif;
+  }
+
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@media print {
+  /* Hide non-printable elements */
+  nav, aside, header, .no-print, button, .sidebar-container, .action-buttons, [role="navigation"] {
+    display: none !important;
+  }
+
+  body, .printable-statement, .print-card, .printable-pay-slip {
+    font-family: 'Nikosh', 'NikoshBAN', sans-serif !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 10pt;
+    padding: 0 !important;
+    margin: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .print-card, .printable-pay-slip, .printable-statement {
+    border: 1px solid #111 !important;
+    box-shadow: none !important;
+    padding: 12mm 15mm !important;
+    margin: 0 auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    background: #ffffff !important;
+    page-break-inside: avoid !important;
+  }
+
+  .page-break {
+    page-break-after: always;
+  }
+
+  table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    font-family: 'Nikosh', 'NikoshBAN', sans-serif !important;
+  }
+
+  th, td {
+    border: 1px solid #444 !important;
+    padding: 4px 6px !important;
+    font-family: 'Nikosh', 'NikoshBAN', sans-serif !important;
+  }
+
+  @page {
+    size: A4 portrait;
+    margin: 10mm;
+  }
+}
